@@ -13,7 +13,7 @@ public class LineComparision {
         System.out.println("x1= ");
         int x1 = sc.nextInt();
         System.out.println("y1= ");
-        int y1= sc.nextInt();
+        int y1 = sc.nextInt();
         System.out.println("x2= ");
         int x2 = sc.nextInt();
         System.out.println("y2= ");
@@ -23,7 +23,7 @@ public class LineComparision {
         double lineLength1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 
 
-        // assigning the X &Y coordinates
+        // assigning the X &Y coordinates of line2
         System.out.println("Enter the  X & Y co-ordinates line2");
         System.out.println("x3= ");
         int x3 = sc.nextInt();
@@ -37,13 +37,14 @@ public class LineComparision {
 
 
         System.out.println("The length of Line1 is" + lineLength1);
-        System.out.println("The length of line2 is " +lineLength2);
+        System.out.println("The length of line2 is " + lineLength2);
 
-        if(lineLength1==lineLength2) {
+        //computation
+        if (lineLength1 == lineLength2) {
             System.out.println("Two Lines are Equal");
-        }
-        else
-         {
+        } else if (lineLength1 < lineLength2) {
+            System.out.println("The line1 is less than line2");
+        } else {
             System.out.println("Two Lines are Not Equal");
         }
 
